@@ -3,7 +3,7 @@ import requests
 # 高德天气查询平台 https://lbs.amap.com/api/webservice/guide/api/weatherinfo
 # 选择Web服务获取key 教程：https://blog.csdn.net/gz2580/article/details/111088190
 
-key = '0192d5d16230c2e6b6a3e79529fc34a6'
+key = 'bd418640af745cb75746c3fa01baa9dc'
 # adcode 城市编码表下载：https://lbs.amap.com/api/webservice/download
 # 江夏区 420115
 # 大同城区 140213
