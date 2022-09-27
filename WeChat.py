@@ -48,19 +48,15 @@ def sendMessage(weatherData, wx_id, template_id):
                 'value': week_list[datetime.date(year, month, day).weekday()],
                 'color': '#228B22'
             },
-            'province': {
-                'value': weatherData['lives'][0]['province'],
-                'color': '#FF6347'
-            },
-            'city': {
-                'value': weatherData['lives'][0]['city'],
+            'region': {
+                'value': weatherData['lives'][0]['province'] + weatherData['lives'][0]['city'],
                 'color': '#FF6347'
             },
             'weather': {
                 'value': weatherData['lives'][0]['weather'],
                 'color': '#FF8C00'
             },
-            'temperature': {
+            'temp': {
                 'value': weatherData['lives'][0]['temperature'] + '℃',
                 'color': '#8A2BE2'
             },
@@ -68,7 +64,7 @@ def sendMessage(weatherData, wx_id, template_id):
                 'value': weatherData['lives'][0]['humidity'] + '%',
                 'color': '#FF69B4'
             },
-            'winddirection': {
+            'wind_dir': {
                 'value': weatherData['lives'][0]['winddirection'],
                 'color': '#00BFFF'
             },
@@ -76,16 +72,16 @@ def sendMessage(weatherData, wx_id, template_id):
                 'value': weatherData['lives'][0]['windpower'],
                 'color': '#00BFFF'
             },
-            'togetherDays': {
+            'love_day': {
                 'value': int(re.search('(?P<days>.*?) days', str(today.__sub__(togetherDay))).group('days')) + 1,
                 'color': '#FF4500'
             },
-            'birthDays': {
+            'birthday1': {
                 'value': int(re.search('(?P<days>.*?) days', str(herBirthday.__sub__(today))).group('days')),
                 'color': '#FFD700'
             },
-            'hua': {  # 情话
-                'value': '',
+            'speack': {  # 情话
+                'value': '又是爱你的一天啊',
                 'color': '#FF0000'
             }
         }
