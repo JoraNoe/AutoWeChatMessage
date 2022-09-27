@@ -33,8 +33,10 @@ resultinfo = requests.get(url,params=parms02)
 print(resultinfo.json())
 
 
+        #["oB63O6s0JNpJPxOtiUDWnGMlMwpI","oB63O6mW5gDQKJyFk2FLXSBdph7E","oB63O6lPUOtE7JaaMfUWUd-9RR7Y"]
+
 # 微信id列表 给谁发加谁
-wx_id =  resultinfo.json.get("data").get("openid")         #["oB63O6s0JNpJPxOtiUDWnGMlMwpI","oB63O6mW5gDQKJyFk2FLXSBdph7E","oB63O6lPUOtE7JaaMfUWUd-9RR7Y"]
+wx_id =  resultinfo.json()["data"]["openid"]
 # 模板消息id
 template_id = 'iPqP0v0KvpQAP_1X_iv79EYpRyD7Q8TyznMV4FGW-no'
 
