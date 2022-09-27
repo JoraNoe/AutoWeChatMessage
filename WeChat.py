@@ -30,9 +30,9 @@ def sendMessage(weatherData, wx_id, template_id):
     month = datetime.datetime.now().month
     day = datetime.datetime.now().day
     # 在一起的日期
-    togetherDay = datetime.date(1999, 1, 1)
+    togetherDay = datetime.date(2022, 9, 27)
     # 她的下一个生日
-    herBirthday = datetime.date(1999, 1, 1)
+    herBirthday = datetime.date(2023, 6, 28)
 
     today = datetime.date(int(year), int(month), int(day))
     week_list = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -41,7 +41,7 @@ def sendMessage(weatherData, wx_id, template_id):
         "template_id": template_id,  # 模板ID
         "data": {
             'date': {
-                'value': datetime.datetime.now().strftime('%Y-%m-%d'),
+                'value': "今天日期："+datetime.datetime.now().strftime('%Y-%m-%d'),
                 'color': '#228B22'
             },
             'week': {
@@ -81,7 +81,7 @@ def sendMessage(weatherData, wx_id, template_id):
                 'color': '#FFD700'
             },
             'speack': {  # 情话
-                'value': '又是爱你的一天啊',
+                'value': 'Test I Love you Baby ',
                 'color': '#FF0000'
             }
         }
