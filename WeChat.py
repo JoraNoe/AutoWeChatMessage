@@ -6,7 +6,7 @@ import re
 # APP的ID号
 appID = 'wxca51f7e17a0711e4'
 # 安全秘钥
-appsecret = '2595930132ba0f8572cbe68a55394981'
+appsecret = '64052c5932fc81571ed7ea8c7e40a6b7'
 
 
 # 获取access_token
