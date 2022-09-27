@@ -4,7 +4,7 @@ import WeChat
 # 微信id列表 给谁发加谁
 wx_id = ["oB63O6s0JNpJPxOtiUDWnGMlMwpI"]
 # 模板消息id
-template_id = 'GhJOek7M9_iVym2I-D1iVbnTrE8y0IhnfacYv9z6LGE'
+template_id = 'shHaky2R1bkftuVk7Q5BHu4_a_byf7juDbrNYbIY1uU'
 
 # 获取天气数据
 weatherData = Gaode.getWeather()
