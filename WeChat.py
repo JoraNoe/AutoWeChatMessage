@@ -4,9 +4,9 @@ import datetime
 import re
 
 # APP的ID号
-appID = 'xxxxxxxxxxx'
+appID = 'wxca51f7e17a0711e4'
 # 安全秘钥
-appsecret = 'xxxxxxxxxxxxxxxxxxxxxx'
+appsecret = '2595930132ba0f8572cbe68a55394981'
 
 
 # 获取access_token
