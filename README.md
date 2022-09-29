@@ -1,1 +1,3 @@
-# AutoWechatMessage
+每天早上9点固定给女朋友发送 天气 
+基于微信测试公众号
+Action 定时调度
