@@ -38,7 +38,7 @@ print(resultinfo.json())
 # 微信id列表 给谁发加谁
 wx_id =  resultinfo.json()["data"]["openid"]
 # 模板消息id
-template_id =  '4CrYFpykY0NcYVF2mnWDBXF38aAmZoKOTPceNhNMGmw' #'iPqP0v0KvpQAP_1X_iv79EYpRyD7Q8TyznMV4FGW-no'
+template_id =  'wZFt0cBQW9QJ4mh9P2dUqNAHdw2E9WIlFxoyUZP-_7s' #'iPqP0v0KvpQAP_1X_iv79EYpRyD7Q8TyznMV4FGW-no'
 
 # 获取天气数据
 weatherData = Gaode.getWeather()
