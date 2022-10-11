@@ -7,7 +7,7 @@ key = 'bd418640af745cb75746c3fa01baa9dc'
 # adcode 城市编码表下载：https://lbs.amap.com/api/webservice/download
 # 江夏区 420115
 # 大同城区 140213
-city_code = '130400'
+city_code =  '130535' # 邯郸'130400'
 
 weather_url = f'https://restapi.amap.com/v3/weather/weatherInfo?key={key}&city={city_code}'
 
