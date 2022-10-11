@@ -30,9 +30,9 @@ def sendMessage(weatherData, wx_id, template_id):
     month = datetime.datetime.now().month
     day = datetime.datetime.now().day
     # 在一起的日期
-    togetherDay = datetime.date(2021, 9, 26)
+    togetherDay = datetime.date(2022, 10, 09)
     # 她的下一个生日
-    herBirthday = datetime.date(2023, 6, 28)
+    herBirthday = datetime.date(2023, 1, 30)
 
     today = datetime.date(int(year), int(month), int(day))
     week_list = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
