@@ -30,6 +30,11 @@ def getLoveLanage():
     returnString = result.json()["word"]
     return returnString
 
+# 获取随机颜色
+def get_color():
+    get_colors = lambda n: list(map(lambda i: "#" + "%06x" % random.randint(0, 0xFFFFFF), range(n)))
+    color_list = get_colors(100)
+    return random.choice(color_list)
 
 
 # 发送天气提醒推送
@@ -50,47 +55,47 @@ def sendMessage(weatherData, wx_id, template_id):
         "data": {
             'date': {
                 'value': "今天日期："+datetime.datetime.now().strftime('%Y-%m-%d'),
-                'color': '#228B22'
+                'color': get_color()
             },
             'week': {
                 'value': week_list[datetime.date(year, month, day).weekday()],
-                'color': '#228B22'
+                'color': get_color()
             },
             'region': {
                 'value': weatherData['lives'][0]['province'] + weatherData['lives'][0]['city'],
-                'color': '#FF6347'
+                'color': get_color()
             },
             'weather': {
                 'value': weatherData['lives'][0]['weather'],
-                'color': '#FF8C00'
+                'color': get_color()
             },
             'temp': {
                 'value': weatherData['lives'][0]['temperature'] + '℃',
-                'color': '#8A2BE2'
+                'color': get_color()
             },
             'humidity': {
                 'value': weatherData['lives'][0]['humidity'] + '%',
-                'color': '#FF69B4'
+                'color': get_color()
             },
             'wind_dir': {
                 'value': weatherData['lives'][0]['winddirection'],
-                'color': '#00BFFF'
+                'color': get_color()
             },
             'windpower': {
                 'value': weatherData['lives'][0]['windpower'],
-                'color': '#00BFFF'
+                'color': get_color()
             },
             'love_day': {
                 'value': int(re.search('(?P<days>.*?) days', str(today.__sub__(togetherDay))).group('days')) + 1,
-                'color': '#FF4500'
+                'color': get_color()
             },
             'birthday1': {
                 'value': int(re.search('(?P<days>.*?) days', str(herBirthday.__sub__(today))).group('days')),
-                'color': '#FFD700'
+                'color': get_color()
             },
             'speack': {  # 情话
                 'value': getLoveLanage(),
-                'color': '#FF0000'
+                'color': get_color()
             }
         }
     }
