@@ -24,9 +24,9 @@ def getAccessToken():
     return access_token
 
 #获取情话接口
-def GetLoveLanage():
-        LoveLanageResult = requests.get(url="https://api.1314.cool/words/api.php")
-        return LoveLanageResult
+def getLoveLanage():
+        loveLanageResult = requests.get(url="https://api.1314.cool/words/api.php")
+        return loveLanageResult
 
 
 # 发送天气提醒推送
@@ -86,7 +86,7 @@ def sendMessage(weatherData, wx_id, template_id):
                 'color': '#FFD700'
             },
             'speack': {  # 情话
-                'value': GetLoveLanage(),
+                'value': getLoveLanage(),
                 'color': '#FF0000'
             }
         }
