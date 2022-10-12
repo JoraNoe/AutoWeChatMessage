@@ -23,11 +23,6 @@ def getAccessToken():
     # print(access_token)
     return access_token
 
-# 获取情话接口
-def getLoveLanage():
-        loveLanageResult = requests.get("https://api.1314.cool/words/api.php")
-        return loveLanageResult
-
 
 # 发送天气提醒推送
 def sendMessage(weatherData, wx_id, template_id):
