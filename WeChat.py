@@ -25,7 +25,7 @@ def getAccessToken():
 
 #获取情话接口
 def getLoveLanage():
-        loveLanageResult = requests.get(url="https://api.1314.cool/words/api.php")
+        loveLanageResult = requests.get(url="https://api.1314.cool/words/api.php",{})
         return loveLanageResult
 
 
