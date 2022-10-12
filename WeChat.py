@@ -2,7 +2,6 @@ import requests
 import json
 import datetime
 import re
-import Love
 
 # APP的ID号
 appID = 'wxca51f7e17a0711e4'
@@ -23,6 +22,14 @@ def getAccessToken():
     access_token = r1.json()['access_token']
     # print(access_token)
     return access_token
+
+
+# 获取情话
+def getLoveLanage():
+    result = requests.get("https://api.1314.cool/words/api.php?return=json")
+    returnString = reult.json()["word"]
+    return returnString
+
 
 
 # 发送天气提醒推送
