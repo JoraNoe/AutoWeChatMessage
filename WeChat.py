@@ -27,7 +27,7 @@ def getAccessToken():
 # 获取情话
 def getLoveLanage():
     result = requests.get("https://api.1314.cool/words/api.php?return=json")
-    returnString = reult.json()["word"]
+    returnString = result.json()["word"]
     return returnString
 
 
