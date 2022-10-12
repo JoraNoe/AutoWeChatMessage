@@ -2,6 +2,7 @@ import requests
 import json
 import datetime
 import re
+import Love
 
 # APP的ID号
 appID = 'wxca51f7e17a0711e4'
