@@ -44,7 +44,7 @@ def sendMessage(weatherData, wx_id, template_id):
     month = datetime.datetime.now().month
     day = datetime.datetime.now().day
     # 在一起的日期
-    togetherDay = datetime.date(2022, 11, 16)
+    togetherDay = datetime.date(2022, 11, 26)
     # 她的下一个生日
     herBirthday = datetime.date(2023, 4, 4)
 
