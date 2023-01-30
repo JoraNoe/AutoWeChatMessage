@@ -9,7 +9,9 @@ key = 'bd418640af745cb75746c3fa01baa9dc'
 # 大同城区 140213
 # 湖北 荆州 421000
 # 120535 邢台 临西
-city_code =  '110108' # 邯郸'130400'
+# 北京海淀区 110108
+# 东北 吉林 白城 洮南市 '220881'
+city_code =  '220881' # 邯郸'130400'
 
 weather_url = f'https://restapi.amap.com/v3/weather/weatherInfo?key={key}&city={city_code}'
 
