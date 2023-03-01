@@ -98,7 +98,7 @@ def sendMessage(weatherData, wx_id, template_id):
                 'color': get_color()
             },
             'speack': {  # 情话
-                'value': "{}{}{}{}".format(getLoveLanage(),' -老婆加油，老婆最棒，老公支持你，老婆使劲，老婆奥利给- 好好学习,距离你考试剩余：',int(re.search('(?P<days>.*?) days', str(ExeamDay.__sub__(today))).group('days')),'天')
+                'value': "{}{}{}{}".format(getLoveLanage(),' -老婆加油，老婆最棒，老公支持你，老婆使劲，老婆奥利给- 好好学习,距离你考试剩余：',int(re.search('(?P<days>.*?) days', str(ExeamDay.__sub__(today))).group('days')),'天'),
                 'color': get_color()
             }
         }
