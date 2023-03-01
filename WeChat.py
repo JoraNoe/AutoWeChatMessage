@@ -49,7 +49,7 @@ def sendMessage(weatherData, wx_id, template_id):
     herBirthday = datetime.date(2023, 4, 4)
     
     #老婆考试日期
-    ExeamDay = daatetime.date(2023,4,1);
+    ExeamDay = datetime.date(2023,4,1);
     
     today = datetime.date(int(year), int(month), int(day))
     week_list = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
